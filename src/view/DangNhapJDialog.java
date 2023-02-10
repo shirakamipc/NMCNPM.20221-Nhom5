@@ -34,7 +34,6 @@ public class DangNhapJDialog extends javax.swing.JDialog {
         jtfTenDangNhap = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         btnSubmit = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jlbMsg = new javax.swing.JLabel();
         jtfMatKhau = new javax.swing.JPasswordField();
 
@@ -58,9 +57,6 @@ public class DangNhapJDialog extends javax.swing.JDialog {
         btnSubmit.setText("LOGIN");
         btnSubmit.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/AlteraDance.gif"))); // NOI18N
-        jLabel2.setText("jLabel2");
-
         jlbMsg.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jlbMsg.setForeground(new java.awt.Color(255, 0, 0));
         jlbMsg.setText("Vui lòng nhập thông tin");
@@ -72,8 +68,8 @@ public class DangNhapJDialog extends javax.swing.JDialog {
         jpnRootLayout.setHorizontalGroup(
             jpnRootLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnRootLayout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 695, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jpnRootLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jlbMsg, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
                     .addGroup(jpnRootLayout.createSequentialGroup()
@@ -82,14 +78,12 @@ public class DangNhapJDialog extends javax.swing.JDialog {
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jtfTenDangNhap)
                             .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jtfMatKhau))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jpnRootLayout.setVerticalGroup(
             jpnRootLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 523, Short.MAX_VALUE)
             .addGroup(jpnRootLayout.createSequentialGroup()
                 .addGap(51, 51, 51)
                 .addComponent(jLabel3)
@@ -103,9 +97,8 @@ public class DangNhapJDialog extends javax.swing.JDialog {
                 .addComponent(btnSubmit)
                 .addGap(26, 26, 26)
                 .addComponent(jlbMsg)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 523, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -127,7 +120,6 @@ public class DangNhapJDialog extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSubmit;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jlbMsg;

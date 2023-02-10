@@ -37,15 +37,15 @@ public class NhanKhauJPanel extends javax.swing.JPanel {
         jtfSearch = new javax.swing.JTextField();
         jpnView = new javax.swing.JPanel();
 
-        jpnRoot.setBackground(new java.awt.Color(204, 255, 204));
+        jpnRoot.setBackground(new java.awt.Color(255, 255, 255));
 
         btnAdd.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         btnAdd.setText("Thêm Mới");
 
         jtfSearch.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        jpnView.setBackground(new java.awt.Color(204, 255, 204));
-        jpnView.setForeground(new java.awt.Color(204, 255, 204));
+        jpnView.setBackground(new java.awt.Color(255, 255, 255));
+        jpnView.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jpnViewLayout = new javax.swing.GroupLayout(jpnView);
         jpnView.setLayout(jpnViewLayout);

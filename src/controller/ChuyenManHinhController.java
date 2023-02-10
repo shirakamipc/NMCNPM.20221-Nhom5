@@ -21,6 +21,7 @@ public class ChuyenManHinhController {
     private JPanel root;
     private String kindSelected = "";
     private List<DanhMucBean> listItem = null;
+    private Color colorBackGround = new Color(63,51,81);
 
     public ChuyenManHinhController(JPanel jpnRoot) {
         this.root = jpnRoot;
@@ -77,7 +78,7 @@ public class ChuyenManHinhController {
         root.add(node);
         root.validate();
         root.repaint();
-            setChangeBackground(kind);
+        setChangeBackground(kind);
         }
 
         @Override
@@ -100,8 +101,8 @@ public class ChuyenManHinhController {
         @Override
         public void mouseExited(MouseEvent e) {
             if(!kindSelected.equalsIgnoreCase(kind)){
-                jpnItem.setBackground(new Color(76, 175, 80));
-        jlbItem.setBackground(new Color(76, 175, 80));
+                jpnItem.setBackground(colorBackGround);
+        jlbItem.setBackground(colorBackGround);
             }
         }
         
@@ -112,8 +113,8 @@ public class ChuyenManHinhController {
                 item.getJpn().setBackground(new Color(96, 100, 191));
                 item.getJlb().setBackground(new Color(96, 100, 191));
             }else{
-                item.getJpn().setBackground(new Color(76, 175, 80));
-                item.getJlb().setBackground(new Color(76, 175, 80));
+                item.getJpn().setBackground(colorBackGround);
+                item.getJlb().setBackground(colorBackGround);
             }
         }
     }
