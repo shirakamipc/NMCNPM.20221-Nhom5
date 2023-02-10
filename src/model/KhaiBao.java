@@ -34,9 +34,13 @@ public class KhaiBao {
         this.VungDich = VungDich;
     }
 
-    public String getBieuHien() { return BieuHien;}
+    public String getBieuHien() {
+        return BieuHien;
+    }
 
-    public void setBieuHien(String BieuHien) {this.BieuHien = BieuHien; }
+    public void setBieuHien(String BieuHien) {
+        this.BieuHien = BieuHien;
+    }
 
     public Date getNgayKhaiBao() {
         return NgayKhaiBao;
