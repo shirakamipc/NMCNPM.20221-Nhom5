@@ -49,6 +49,6 @@ public class KhaiBao {
 
     @Override
     public String toString() {
-        return "KhaiBao{" + "IDTest=" + IDKhaiBao + ", IDNhanKhau=" + IDNhanKhau + ", VungDich=" + VungDich + ", BieuHien=" + BieuHien + ", NgayKhaiBao=" + NgayKhaiBao + '}';
+        return "KhaiBao{" + "idTest=" + IDKhaiBao + ", idNhanKhau=" + IDNhanKhau + ", vungDich=" + VungDich + ", bieuHien=" + BieuHien + ", ngayKhaiBao=" + NgayKhaiBao + '}';
     }
 }

@@ -12,11 +12,14 @@ import java.sql.Date;
  */
 public class HoKhau {
     private int ID;
-    private String HoTen;
-    private Date NgaySinh;
-    private String GioiTinh;
-    private String NoiSinh;
-    private String DiaChi;
+    private String maHoKhau;
+    private int idChuHo;
+    private String maKhuVuc;
+    private String diaChi;
+    private Date ngayLap;
+    private Date ngayChuyenDi;
+    private String lyDoChuyen;
+    private int nguoiThucHien;
 
     public int getID() {
         return ID;
@@ -26,49 +29,73 @@ public class HoKhau {
         this.ID = ID;
     }
 
-    public String getHoTen() {
-        return HoTen;
+    public String getMaHoKhau() {
+        return maHoKhau;
     }
 
-    public void setHoTen(String HoTen) {
-        this.HoTen = HoTen;
+    public void setMaHoKhau(String maHoKhau) {
+        this.maHoKhau = maHoKhau;
     }
 
-    public Date getNgaySinh() {
-        return NgaySinh;
+    public int getIdChuHo() {
+        return idChuHo;
     }
 
-    public void setNgaySinh(Date NgaySinh) {
-        this.NgaySinh = NgaySinh;
+    public void setIdChuHo(int idChuHo) {
+        this.idChuHo = idChuHo;
     }
 
-    public String getGioiTinh() {
-        return GioiTinh;
+    public String getMaKhuVuc() {
+        return maKhuVuc;
     }
 
-    public void setGioiTinh(String GioiTinh) {
-        this.GioiTinh = GioiTinh;
-    }
-
-    public String getNoiSinh() {
-        return NoiSinh;
-    }
-
-    public void setNoiSinh(String NoiSinh) {
-        this.NoiSinh = NoiSinh;
+    public void setMaKhuVuc(String maKhuVuc) {
+        this.maKhuVuc = maKhuVuc;
     }
 
     public String getDiaChi() {
-        return DiaChi;
+        return diaChi;
     }
 
-    public void setDiaChi(String DiaChi) {
-        this.DiaChi = DiaChi;
+    public void setDiaChi(String diaChi) {
+        this.diaChi = diaChi;
+    }
+
+    public Date getNgayLap() {
+        return ngayLap;
+    }
+
+    public void setNgayLap(Date ngayLap) {
+        this.ngayLap = ngayLap;
+    }
+
+    public Date getNgayChuyenDi() {
+        return ngayChuyenDi;
+    }
+
+    public void setNgayChuyenDi(Date ngayChuyenDi) {
+        this.ngayChuyenDi = ngayChuyenDi;
+    }
+
+    public String getLyDoChuyen() {
+        return lyDoChuyen;
+    }
+
+    public void setLyDoChuyen(String lyDoChuyen) {
+        this.lyDoChuyen = lyDoChuyen;
+    }
+
+    public int getNguoiThucHien() {
+        return nguoiThucHien;
+    }
+
+    public void setNguoiThucHien(int nguoiThucHien) {
+        this.nguoiThucHien = nguoiThucHien;
     }
 
     @Override
     public String toString() {
-        return "HoKhau{" + "ID=" + ID + ", HoTen=" + HoTen + ", NgaySinh=" + NgaySinh + ", GioiTinh=" + GioiTinh + ", NoiSinh=" + NoiSinh + ", DiaChi=" + DiaChi + '}';
+        return "HoKhau{" + "ID=" + ID + ", maHoKhau=" + maHoKhau + ", idChuHo=" + idChuHo + ", maKhuVuc=" + maKhuVuc + ", diaChi=" + diaChi + ", ngayLap=" + ngayLap + ", ngayChuyenDi="+ngayChuyenDi+", lyDoChuyen="+lyDoChuyen+", nguoiThucHien="+nguoiThucHien+ '}';
     }
 
 }
