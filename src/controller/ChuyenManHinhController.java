@@ -9,8 +9,11 @@ import java.util.List;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import view.CachLyJPanel;
+import view.HoKhauJPanel;
+import view.KhaiBaoJPanel;
 import view.KiemTraJPanel;
 import view.NhanKhauJPanel;
+import view.ThongKeCachLyJPanel;
 import view.TrangChuJPanel;
 
 /**
@@ -69,6 +72,16 @@ public class ChuyenManHinhController {
                     break;
                 case "CachLy":
                     node = new CachLyJPanel();
+                    break;
+                case "HoKhau":
+                node = new HoKhauJPanel();
+                break;
+                case "KhaiBao":
+                    node = new KhaiBaoJPanel();
+                    break;
+                case "ThongKe":
+                    node = new ThongKeCachLyJPanel();
+                    // to do: add statement and code to let user choose which type of 
                     break;
                 default:
                     break;

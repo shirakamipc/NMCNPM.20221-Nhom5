@@ -32,6 +32,9 @@ public class MainJFrame extends javax.swing.JFrame {
         listItem.add(new DanhMucBean("NhanKhau", jpnTrangChu1, jlbNhanKhau));
         listItem.add(new DanhMucBean("KiemTra", jpnKiemTra, jlbKiemTra));
         listItem.add(new DanhMucBean("CachLy", jpnCachLy, jlbCachLy));
+        listItem.add(new DanhMucBean("HoKhau", jpnHoKhau, jlbHoKhau));
+        listItem.add(new DanhMucBean("KhaiBao", jpnKhaiBao, jlbKhaiBao));
+        listItem.add(new DanhMucBean("ThongKe", jpnThongKe, jlbThongKe));
         controller.setEvent(listItem);
 
     }
