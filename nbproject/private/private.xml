@@ -3,10 +3,29 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/admin/OneDrive/Documents/NetBeansProjects/QuanLyCoVid/src/view/KiemTraJFrame.java</file>
-            <file>file:/C:/Users/admin/OneDrive/Documents/NetBeansProjects/QuanLyCoVid/src/view/CachLyJFrame.java</file>
-            <file>file:/C:/Users/admin/OneDrive/Documents/NetBeansProjects/QuanLyCoVid/src/controller/QuanLyCachLyController.java</file>
-            <file>file:/C:/Users/admin/OneDrive/Documents/NetBeansProjects/QuanLyCoVid/src/controller/QuanLyKiemTraController.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/KiemTraJFrame.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/controller/QuanLyCachLyController.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/utility/ClassTableModel2.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/controller/ChuyenManHinhController.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/CachLyJPanel.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/NhanKhauJFrame.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/NhanKhauJPanel.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/HoKhauJPanel.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/controller/NhanKhauController.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/MainJFrame.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/main/Main.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/KiemTraJPanel.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/KhaiBaoJPanel.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/DangNhapJDialog.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/controller/KiemTraController.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/utility/ClassTableModel.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/TrangChuJPanel.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/ThongKeCachLyJPanel.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/controller/CachLyController.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/SQL/DBConnect.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/utility/ClassTableModel1.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/view/CachLyJFrame.java</file>
+            <file>file:/C:/Users/quang.lethanh/Desktop/Quanlycovid-git-shirakami/QuanLyCoVid/src/SQL/CachLySQLImpl.java</file>
         </group>
     </open-files>
 </project-private>
