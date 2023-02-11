@@ -14,7 +14,7 @@ public class KhaiBao {
         return IDKhaiBao;
     }
 
-    public void setIDKhaiBap(int IDKhaiBao) {
+    public void setIDKhaiBao(int IDKhaiBao) {
         this.IDKhaiBao = IDKhaiBao;
     }
 
