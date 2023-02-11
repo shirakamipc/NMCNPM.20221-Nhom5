@@ -20,7 +20,7 @@ public class HoKhauSQLImpl implements HoKhauSQL {
     public List<HoKhau> getList() {
         try {
             Connection cons = DBConnect.getConnection();
-            String sql = "SELECT * FROM kiemtra";
+            String sql = "SELECT * FROM hokhau";
             List<HoKhau> list = new ArrayList<>();
             PreparedStatement ps = cons.prepareCall(sql);
             ResultSet rs = ps.executeQuery();
@@ -57,13 +57,12 @@ public class HoKhauSQLImpl implements HoKhauSQL {
             ps.setInt(1, hoKhau.getID());
             ps.setString(2, hoKhau.getMaHoKhau());
             ps.setInt(3, hoKhau.getIdChuHo());
-            ps.setInt(4, hoKhau.getIdChuHo());
-            ps.setString(5, hoKhau.getMaKhuVuc());
-            ps.setString(6, hoKhau.getDiaChi());
-            ps.setDate(7, (java.sql.Date) new Date(hoKhau.getNgayLap().getTime()));
-            ps.setDate(8, (java.sql.Date) new Date(hoKhau.getNgayChuyenDi().getTime()));
-            ps.setString(9, hoKhau.getLyDoChuyen());
-            ps.setInt(10, hoKhau.getNguoiThucHien());
+            ps.setString(4, hoKhau.getMaKhuVuc());
+            ps.setString(5, hoKhau.getDiaChi());
+            ps.setDate(6, (java.sql.Date) new Date(hoKhau.getNgayLap().getTime()));
+            ps.setDate(7, (java.sql.Date) new Date(hoKhau.getNgayChuyenDi().getTime()));
+            ps.setString(8, hoKhau.getLyDoChuyen());
+            ps.setInt(9, hoKhau.getNguoiThucHien());
             ps.execute();
             ResultSet rs = ps.getGeneratedKeys();
             int generatedKey = 0;

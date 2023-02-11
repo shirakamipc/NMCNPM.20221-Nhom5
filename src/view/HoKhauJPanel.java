@@ -4,6 +4,8 @@
  */
 package view;
 
+import controller.QuanLyHoKhauController;
+
 /**
  *
  * @author quang.lethanh
@@ -15,6 +17,9 @@ public class HoKhauJPanel extends javax.swing.JPanel {
      */
     public HoKhauJPanel() {
         initComponents();
+        QuanLyHoKhauController controller = new QuanLyHoKhauController(jpnView, btnAdd, jtfSearch);
+        controller.setDatetoTable3();
+        controller.setEvent();
     }
 
     /**
