@@ -24,9 +24,8 @@ public class ClassTableModel4 {
                 o[0] = khaiBao.getIDKhaiBao();
                 o[1] = khaiBao.getIDNhanKhau();
                 o[2] = khaiBao.getVungDich();
-                o[3] = khaiBao.getVungDich();
-                o[4] = khaiBao.getBieuHien();
-                o[5] = khaiBao.getNgayKhaiBao();
+                o[3] = khaiBao.getBieuHien();
+                o[4] = khaiBao.getNgayKhaiBao();
                 dtm.addRow(o);
             }
         }

@@ -19,6 +19,7 @@ public class HoKhauJFrame extends javax.swing.JFrame {
     public HoKhauJFrame(HoKhau hoKhau) {
         initComponents();
         HoKhauController controller = new HoKhauController(jtfIDHoKhau, jtfMaHoKhau, jtfIDChuHo, jtfMaKhuVuc, jtfDiaChi, jdcNgayLap, jdcNgayChuyenDi, jtaLyDoChuyen, jtfNguoiThucHien, btnSubmit);
+        System.err.println("worked");
         controller.setView(hoKhau);
         controller.setEvent();
     }
