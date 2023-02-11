@@ -78,7 +78,10 @@
         <Container class="javax.swing.JPanel" name="jpnMenu">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="36" green="1d" red="1f" type="rgb"/>
+              <Color blue="e7" green="c7" red="a7" type="rgb"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e7" green="c7" red="a7" type="rgb"/>
             </Property>
           </Properties>
 
@@ -87,15 +90,15 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jPanel5" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="31" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jpnTrangChu" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jpnTrangChu1" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jpnHoKhau" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jpnKhaiBao" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jpnKiemTra" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jpnCachLy" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jpnThongKe" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jpnTrangChu1" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jpnHoKhau" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jpnKiemTra" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jpnCachLy" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jpnThongKe" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jpnKhaiBao" alignment="1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
                   </Group>
@@ -104,6 +107,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Component id="jpnTrangChu" min="-2" max="-2" attributes="0"/>
@@ -117,9 +121,9 @@
                       <Component id="jpnKiemTra" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Component id="jpnCachLy" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jpnThongKe" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="550" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="15" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -128,7 +132,7 @@
             <Container class="javax.swing.JPanel" name="jPanel5">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="51" green="33" red="3f" type="rgb"/>
+                  <Color blue="cb" green="b4" red="84" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -144,10 +148,9 @@
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" pref="46" max="-2" attributes="0"/>
-                          <EmptySpace pref="25" max="32767" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -156,17 +159,17 @@
                 <Component class="javax.swing.JLabel" name="jLabel1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="66" green="66" red="66" type="rgb"/>
+                      <Color blue="e7" green="c7" red="a7" type="rgb"/>
                     </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Arial" size="16" style="1"/>
+                      <Font name="Arial" size="28" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/Account.png"/>
+                      <Image iconType="3" name="/images/icons8-male-user-96.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n L&#xfd; Covid 19"/>
                   </Properties>
@@ -176,17 +179,17 @@
             <Container class="javax.swing.JPanel" name="jpnTrangChu">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="51" green="33" red="3f" type="rgb"/>
+                  <Color blue="cb" green="b4" red="84" type="rgb"/>
                 </Property>
               </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jlbTrangChu" pref="274" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jlbTrangChu" min="-2" pref="258" max="-2" attributes="0"/>
+                          <EmptySpace pref="22" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -204,19 +207,19 @@
                 <Component class="javax.swing.JLabel" name="jlbTrangChu">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                      <Color blue="cb" green="b4" red="84" type="rgb"/>
                     </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="1"/>
+                      <Font name="Segoe UI" size="24" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/Home.png"/>
+                      <Image iconType="3" name="/images/icons8-home-64.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="M&#xe0;n H&#xec;nh Ch&#xed;nh"/>
+                    <Property name="text" type="java.lang.String" value="TRANG CH&#x1ee6;"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -224,7 +227,7 @@
             <Container class="javax.swing.JPanel" name="jpnTrangChu1">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="51" green="33" red="3f" type="rgb"/>
+                  <Color blue="cb" green="b4" red="84" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -233,8 +236,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jlbNhanKhau" pref="277" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jlbNhanKhau" min="-2" pref="258" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -251,17 +254,20 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="jlbNhanKhau">
                   <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="cb" green="b4" red="84" type="rgb"/>
+                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="1"/>
+                      <Font name="Segoe UI" size="24" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/NhanKhau.png"/>
+                      <Image iconType="3" name="/images/icons8-conference-64.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Th&#xf4;ng Tin Nh&#xe2;n Kh&#x1ea9;u"/>
+                    <Property name="text" type="java.lang.String" value=" NH&#xc2;N KH&#x1ea8;U"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -269,7 +275,7 @@
             <Container class="javax.swing.JPanel" name="jpnHoKhau">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="51" green="33" red="3f" type="rgb"/>
+                  <Color blue="cb" green="b4" red="84" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -278,8 +284,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jlbHoKhau" pref="277" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jlbHoKhau" min="-2" pref="258" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -296,17 +302,20 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="jlbHoKhau">
                   <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="cb" green="b4" red="84" type="rgb"/>
+                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="1"/>
+                      <Font name="Segoe UI" size="24" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/Home.png"/>
+                      <Image iconType="3" name="/images/icons8-home-address-64.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="H&#x1ed9; Kh&#x1ea9;u"/>
+                    <Property name="text" type="java.lang.String" value=" H&#x1ed8; KH&#x1ea8;U"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -314,17 +323,16 @@
             <Container class="javax.swing.JPanel" name="jpnKhaiBao">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="51" green="33" red="3f" type="rgb"/>
+                  <Color blue="cb" green="b4" red="84" type="rgb"/>
                 </Property>
               </Properties>
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jlbKhaiBao" pref="277" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="7" max="32767" attributes="0"/>
+                          <Component id="jlbKhaiBao" min="-2" pref="282" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -341,17 +349,20 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="jlbKhaiBao">
                   <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="cb" green="b4" red="84" type="rgb"/>
+                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="1"/>
+                      <Font name="Segoe UI" size="22" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/CachLy.png"/>
+                      <Image iconType="3" name="/images/icons8-edit-property-64.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Khai B&#xe1;o d&#x1ecb;ch t&#x1ec5;"/>
+                    <Property name="text" type="java.lang.String" value="KHAI B&#xc1;O D&#x1eca;CH T&#x1ec4;"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -359,7 +370,7 @@
             <Container class="javax.swing.JPanel" name="jpnKiemTra">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="51" green="33" red="3f" type="rgb"/>
+                  <Color blue="cb" green="b4" red="84" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -368,8 +379,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jlbKiemTra" pref="277" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jlbKiemTra" min="-2" pref="266" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -386,17 +397,20 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="jlbKiemTra">
                   <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="cb" green="b4" red="84" type="rgb"/>
+                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="1"/>
+                      <Font name="Segoe UI" size="24" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/NhanKhau.png"/>
+                      <Image iconType="3" name="/images/icons8-antivirus-52.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Th&#xf4;ng Tin Ki&#x1ec3;m Tra"/>
+                    <Property name="text" type="java.lang.String" value="   TEST COVID 19"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -404,7 +418,7 @@
             <Container class="javax.swing.JPanel" name="jpnCachLy">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="51" green="33" red="3f" type="rgb"/>
+                  <Color blue="cb" green="b4" red="84" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -413,8 +427,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jlbCachLy" pref="277" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jlbCachLy" min="-2" pref="241" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -431,17 +445,20 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="jlbCachLy">
                   <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="cb" green="b4" red="84" type="rgb"/>
+                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="1"/>
+                      <Font name="Segoe UI" size="24" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/Home.png"/>
+                      <Image iconType="3" name="/images/icons8-hospital-3-64.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Th&#xf4;ng Tin C&#xe1;ch Ly"/>
+                    <Property name="text" type="java.lang.String" value=" C&#xc1;CH LY"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -449,7 +466,7 @@
             <Container class="javax.swing.JPanel" name="jpnThongKe">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="51" green="33" red="3f" type="rgb"/>
+                  <Color blue="cb" green="b4" red="84" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -458,17 +475,16 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jlbThongKe" pref="277" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jlbThongKe" min="-2" pref="232" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" max="-2" attributes="0"/>
                           <Component id="jlbThongKe" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="6" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -476,17 +492,21 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="jlbThongKe">
                   <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="cb" green="b4" red="84" type="rgb"/>
+                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="1"/>
+                      <Font name="Segoe UI" size="24" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images/Home.png"/>
+                      <Image iconType="3" name="/images/icons8-bar-chart-64.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Th&#x1ed1;ng k&#xea;"/>
+                    <Property name="text" type="java.lang.String" value=" TH&#x1ed0;NG K&#xca;"/>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -498,7 +518,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="493" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="637" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">

@@ -49,7 +49,9 @@ public class NhanKhauJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        btnSubmit.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel1.setBackground(new java.awt.Color(167, 199, 231));
+
+        btnSubmit.setBackground(new java.awt.Color(130, 180, 203));
         btnSubmit.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         btnSubmit.setText("Lưu Dữ Liệu");
 
