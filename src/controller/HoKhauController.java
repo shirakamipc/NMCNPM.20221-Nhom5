@@ -21,15 +21,16 @@ import service.HoKhauServiceImpl;
 public class HoKhauController {
     private JTextField jtfIDHoKhau;
     private JTextField jtfIDMaHoKhau;
-    private JTextField jtfHoTen;
+    private JTextField jtfMaKhuVuc;
     private JButton btnSubmit;
-    private JTextArea jtaNoiHoKhau;
-    private JTextField jtfDaKiemTra;
+    private JTextField jtfDiaChi;
     private JTextField jtfMucDoHoKhau;
     private JDateChooser jdcThoiGianBatDau;
     private JLabel jlbMsg;
     private HoKhau hoKhau = null;
     private HoKhauService hoKhauService = null;
+    private JTextArea jtaNoiHoKhau;
+
 
     public HoKhauController(JTextField jtfIDCachLy, JTextField jtfIDNhanKhau, JTextField jtfHoTen, JButton btnSubmit, 
             JTextField jtfDaKiemTra, JTextArea jtaNoiCachLy, JTextField jtfMucDoCachLy,

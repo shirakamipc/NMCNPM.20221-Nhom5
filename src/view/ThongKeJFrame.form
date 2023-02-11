@@ -85,10 +85,10 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnSubmit4" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnThongKeCachLy" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnSubmit3" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnSubmit" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnThongKeKiemTra" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnThongKeNhanKhau" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="283" max="-2" attributes="0"/>
                   </Group>
@@ -100,11 +100,11 @@
                       <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" pref="50" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="btnSubmit" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnThongKeNhanKhau" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
-                      <Component id="btnSubmit3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnThongKeKiemTra" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="btnSubmit4" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnThongKeCachLy" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="120" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -123,7 +123,7 @@
                 <Property name="text" type="java.lang.String" value="L&#x1ef1;a ch&#x1ecd;n th&#x1ed1;ng k&#xea; mong mu&#x1ed1;n"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="btnSubmit">
+            <Component class="javax.swing.JButton" name="btnThongKeNhanKhau">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cb" green="b4" red="82" type="rgb"/>
@@ -137,7 +137,7 @@
                 <Property name="text" type="java.lang.String" value="Th&#x1ed1;ng k&#xea; nh&#xe2;n kh&#x1ea9;u"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="btnSubmit3">
+            <Component class="javax.swing.JButton" name="btnThongKeKiemTra">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cb" green="b4" red="82" type="rgb"/>
@@ -151,10 +151,10 @@
                 <Property name="text" type="java.lang.String" value="Th&#x1ed1;ng k&#xea; test Covid-19"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubmit3ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnThongKeKiemTraActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="btnSubmit4">
+            <Component class="javax.swing.JButton" name="btnThongKeCachLy">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cb" green="b4" red="82" type="rgb"/>
@@ -168,7 +168,7 @@
                 <Property name="text" type="java.lang.String" value="Th&#x1ed1;ng k&#xea; c&#xe1;ch ly"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubmit4ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnThongKeCachLyActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

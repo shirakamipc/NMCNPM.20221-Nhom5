@@ -29,9 +29,9 @@ public class ThongKeJFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        btnSubmit = new javax.swing.JButton();
-        btnSubmit3 = new javax.swing.JButton();
-        btnSubmit4 = new javax.swing.JButton();
+        btnThongKeNhanKhau = new javax.swing.JButton();
+        btnThongKeKiemTra = new javax.swing.JButton();
+        btnThongKeCachLy = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,28 +46,28 @@ public class ThongKeJFrame extends javax.swing.JFrame {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Lựa chọn thống kê mong muốn");
 
-        btnSubmit.setBackground(new java.awt.Color(130, 180, 203));
-        btnSubmit.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
-        btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
-        btnSubmit.setText("Thống kê nhân khẩu");
+        btnThongKeNhanKhau.setBackground(new java.awt.Color(130, 180, 203));
+        btnThongKeNhanKhau.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
+        btnThongKeNhanKhau.setForeground(new java.awt.Color(255, 255, 255));
+        btnThongKeNhanKhau.setText("Thống kê nhân khẩu");
 
-        btnSubmit3.setBackground(new java.awt.Color(130, 180, 203));
-        btnSubmit3.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
-        btnSubmit3.setForeground(new java.awt.Color(255, 255, 255));
-        btnSubmit3.setText("Thống kê test Covid-19");
-        btnSubmit3.addActionListener(new java.awt.event.ActionListener() {
+        btnThongKeKiemTra.setBackground(new java.awt.Color(130, 180, 203));
+        btnThongKeKiemTra.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
+        btnThongKeKiemTra.setForeground(new java.awt.Color(255, 255, 255));
+        btnThongKeKiemTra.setText("Thống kê test Covid-19");
+        btnThongKeKiemTra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSubmit3ActionPerformed(evt);
+                btnThongKeKiemTraActionPerformed(evt);
             }
         });
 
-        btnSubmit4.setBackground(new java.awt.Color(130, 180, 203));
-        btnSubmit4.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
-        btnSubmit4.setForeground(new java.awt.Color(255, 255, 255));
-        btnSubmit4.setText("Thống kê cách ly");
-        btnSubmit4.addActionListener(new java.awt.event.ActionListener() {
+        btnThongKeCachLy.setBackground(new java.awt.Color(130, 180, 203));
+        btnThongKeCachLy.setFont(new java.awt.Font("Montserrat", 1, 24)); // NOI18N
+        btnThongKeCachLy.setForeground(new java.awt.Color(255, 255, 255));
+        btnThongKeCachLy.setText("Thống kê cách ly");
+        btnThongKeCachLy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSubmit4ActionPerformed(evt);
+                btnThongKeCachLyActionPerformed(evt);
             }
         });
 
@@ -78,10 +78,10 @@ public class ThongKeJFrame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnSubmit4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnThongKeCachLy, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnSubmit3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnSubmit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnThongKeKiemTra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnThongKeNhanKhau, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(283, 283, 283))
         );
         jPanel2Layout.setVerticalGroup(
@@ -90,11 +90,11 @@ public class ThongKeJFrame extends javax.swing.JFrame {
                 .addGap(48, 48, 48)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnSubmit)
+                .addComponent(btnThongKeNhanKhau)
                 .addGap(13, 13, 13)
-                .addComponent(btnSubmit3)
+                .addComponent(btnThongKeKiemTra)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnSubmit4)
+                .addComponent(btnThongKeCachLy)
                 .addContainerGap(120, Short.MAX_VALUE))
         );
 
@@ -129,13 +129,13 @@ public class ThongKeJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSubmit3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmit3ActionPerformed
+    private void btnThongKeKiemTraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThongKeKiemTraActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSubmit3ActionPerformed
+    }//GEN-LAST:event_btnThongKeKiemTraActionPerformed
 
-    private void btnSubmit4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmit4ActionPerformed
+    private void btnThongKeCachLyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThongKeCachLyActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSubmit4ActionPerformed
+    }//GEN-LAST:event_btnThongKeCachLyActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,9 +173,9 @@ public class ThongKeJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnSubmit;
-    private javax.swing.JButton btnSubmit3;
-    private javax.swing.JButton btnSubmit4;
+    private javax.swing.JButton btnThongKeCachLy;
+    private javax.swing.JButton btnThongKeKiemTra;
+    private javax.swing.JButton btnThongKeNhanKhau;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
