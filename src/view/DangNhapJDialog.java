@@ -68,7 +68,7 @@ public class DangNhapJDialog extends javax.swing.JDialog {
         });
 
         jlbMsg.setFont(new java.awt.Font("Open Sans Medium", 1, 16)); // NOI18N
-        jlbMsg.setForeground(new java.awt.Color(17, 103, 173));
+        jlbMsg.setForeground(new java.awt.Color(59, 61, 161));
         jlbMsg.setText("Vui lòng nhập thông tin");
 
         jtfMatKhau.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N

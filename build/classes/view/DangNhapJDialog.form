@@ -166,7 +166,7 @@
               <Font name="Open Sans Medium" size="16" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ad" green="67" red="11" type="rgb"/>
+              <Color blue="a1" green="3d" red="3b" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Vui l&#xf2;ng nh&#x1ead;p th&#xf4;ng tin"/>
           </Properties>
