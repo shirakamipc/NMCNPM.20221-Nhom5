@@ -6,7 +6,7 @@ import javax.swing.table.DefaultTableModel;
 import java.util.List;
 
 public class ClassTableModel4 {
-    public DefaultTableModel setTableHoKhau(List<KhaiBao> listItem, String[] listColumn){
+    public DefaultTableModel setTableKhaiBao(List<KhaiBao> listItem, String[] listColumn){
         DefaultTableModel dtm = new DefaultTableModel(){
             @Override
             public boolean isCellEditable(int row, int column){
