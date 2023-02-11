@@ -6,7 +6,6 @@ public class KhaiBao {
     private int IDKhaiBao;
     private int IDNhanKhau;
     private String VungDich;
-
     private String BieuHien;
     private Date NgayKhaiBao;
 
