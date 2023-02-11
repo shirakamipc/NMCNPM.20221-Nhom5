@@ -24,7 +24,7 @@ public class ChuyenManHinhController {
     private JPanel root;
     private String kindSelected = "";
     private List<DanhMucBean> listItem = null;
-    private Color colorBackGround = new Color(63,51,81);
+    private Color colorBackGround = new Color(132,180,203);
 
     public ChuyenManHinhController(JPanel jpnRoot) {
         this.root = jpnRoot;
