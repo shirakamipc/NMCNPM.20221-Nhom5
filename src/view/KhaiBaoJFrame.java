@@ -4,6 +4,9 @@
  */
 package view;
 
+import controller.KhaiBaoController;
+import model.KhaiBao;
+
 /**
  *
  * @author hoang
@@ -13,8 +16,11 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
     /**
      * Creates new form KhaiBaoJFrame
      */
-    public KhaiBaoJFrame() {
+    public KhaiBaoJFrame(KhaiBao khaiBao) {
         initComponents();
+        KhaiBaoController controller = new KhaiBaoController(jtfIDKhaiBao, jtfIDNhanKhau, jtfVungDich, jtaBieuHien, jdcNgayKhaiBao, btnSubmit);
+        controller.setView(khaiBao);
+        controller.setEvent();
     }
 
     /**
@@ -35,7 +41,7 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
         btnSubmit = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jtfNhanKhau = new javax.swing.JTextField();
+        jtfIDNhanKhau = new javax.swing.JTextField();
         jtfVungDich = new javax.swing.JTextField();
         btnSubmit2 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -88,7 +94,7 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel7.setText("Biểu hiện");
 
-        jtfNhanKhau.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        jtfIDNhanKhau.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
 
         jtfVungDich.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jtfVungDich.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +143,7 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
                         .addGap(2, 2, 2)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jtfIDKhaiBao, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
-                            .addComponent(jtfNhanKhau)))
+                            .addComponent(jtfIDNhanKhau)))
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                         .addComponent(jtfVungDich, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE))
@@ -154,7 +160,7 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jtfNhanKhau, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtfIDNhanKhau, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -230,37 +236,6 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(KhaiBaoJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(KhaiBaoJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(KhaiBaoJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(KhaiBaoJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new KhaiBaoJFrame().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSubmit;
@@ -277,7 +252,7 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jlbMsg;
     private javax.swing.JTextArea jtaBieuHien;
     private javax.swing.JTextField jtfIDKhaiBao;
-    private javax.swing.JTextField jtfNhanKhau;
+    private javax.swing.JTextField jtfIDNhanKhau;
     private javax.swing.JTextField jtfVungDich;
     // End of variables declaration//GEN-END:variables
 }

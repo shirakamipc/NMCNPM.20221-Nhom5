@@ -50,7 +50,7 @@ CREATE TABLE `khaibao` (
   `idkhaibao` int NOT NULL,
   `idNhanKhau` int NOT NULL,
   `vungDich` varchar(100)DEFAULT NULL,
-  `bieuHien` int DEFAULT NULL,
+  `bieuHien` text DEFAULT NULL,
   `ngayKhaiBao` date DEFAULT NULL
 );
 

@@ -45,7 +45,7 @@ public class KhaiBao {
         return NgayKhaiBao;
     }
 
-    public void setNgayKhaiBao(Date ThoiDiemTest) {
+    public void setNgayKhaiBao(Date NgayKhaiBao) {
         this.NgayKhaiBao = NgayKhaiBao;
     }
 

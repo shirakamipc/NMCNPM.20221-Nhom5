@@ -4,6 +4,8 @@
  */
 package view;
 
+import controller.QuanLyKhaiBaoController;
+
 /**
  *
  * @author quang.lethanh
@@ -15,6 +17,9 @@ public class KhaiBaoJPanel extends javax.swing.JPanel {
      */
     public KhaiBaoJPanel() {
         initComponents();
+        QuanLyKhaiBaoController controller = new QuanLyKhaiBaoController(jpnView, btnAdd, jtfSearch);
+        controller.setDatetoTable4();
+        controller.setEvent();
     }
 
     /**
