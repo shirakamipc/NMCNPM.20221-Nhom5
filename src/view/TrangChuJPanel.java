@@ -75,7 +75,7 @@ public class TrangChuJPanel extends javax.swing.JPanel {
         jLabel9.setFont(new java.awt.Font("Open Sans", 1, 19)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Dương Nhật Thành - 20205226");
+        jLabel9.setText("Dương Nhật Thành - 20205233");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);

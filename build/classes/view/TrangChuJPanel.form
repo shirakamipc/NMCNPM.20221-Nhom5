@@ -201,7 +201,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="D&#x1b0;&#x1a1;ng Nh&#x1ead;t Th&#xe0;nh - 20205226"/>
+            <Property name="text" type="java.lang.String" value="D&#x1b0;&#x1a1;ng Nh&#x1ead;t Th&#xe0;nh - 20205233"/>
           </Properties>
         </Component>
       </SubComponents>
