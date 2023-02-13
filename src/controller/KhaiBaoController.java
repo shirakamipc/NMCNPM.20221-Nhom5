@@ -64,7 +64,7 @@ public class KhaiBaoController {
                     khaiBao.setBieuHien(jtaBieuHien.getText());
                     int lastID = khaiBaoService.createOrUpdate(khaiBao);
                     if (lastID > 0){
-                    khaiBao.setIDKhaiBao(lastID);
+//                    khaiBao.setIDKhaiBao(lastID);
                     jtfIDKhaiBao.setText("#" + lastID);
                     jlbMsg.setText("Thêm Mới Dữ Liệu Thành Công");
                     }

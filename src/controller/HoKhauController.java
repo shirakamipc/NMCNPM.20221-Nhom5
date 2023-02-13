@@ -79,7 +79,7 @@ public class HoKhauController {
                     hoKhau.setLyDoChuyen(jtaLyDoChuyen.getText());
                     int lastID = hoKhauService.createOrUpdate(hoKhau);
                     if (lastID > 0){
-                    hoKhau.setID(lastID);
+//                    hoKhau.setID(lastID);
                     jtfIDHoKhau.setText("#" + lastID);
                     jlbMsg.setText("Thêm Mới Dữ Liệu Thành Công");
                     }

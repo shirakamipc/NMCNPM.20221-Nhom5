@@ -4,21 +4,21 @@
  */
 package view;
 
-import controller.QuanLyThongKeCachLyController;
+import controller.QuanLyThongKeTestController;
 
 /**
  *
- * @author quang.lethanh
+ * @author quang
  */
-public class ThongKeCachLyJPanel extends javax.swing.JPanel {
+public class ThongKeTestJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form ThongKeCachLyJPanel
+     * Creates new form ThongKeTestJPanel
      */
-    public ThongKeCachLyJPanel() {
+    public ThongKeTestJPanel() {
         initComponents();
-        QuanLyThongKeCachLyController controller = new QuanLyThongKeCachLyController(jpnView, jtfSearchMucDo, jtfSearchThoiGian);
-        controller.setDatetoTable2();
+        QuanLyThongKeTestController controller = new QuanLyThongKeTestController(jpnView, jtfSearchThoiGian, jtfSearchKetQua);
+        controller.setDatetoTable1();
     }
 
     /**
@@ -31,7 +31,7 @@ public class ThongKeCachLyJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jpnRoot = new javax.swing.JPanel();
-        jtfSearchMucDo = new javax.swing.JTextField();
+        jtfSearchKetQua = new javax.swing.JTextField();
         jpnView = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -40,7 +40,7 @@ public class ThongKeCachLyJPanel extends javax.swing.JPanel {
 
         jpnRoot.setBackground(new java.awt.Color(255, 255, 255));
 
-        jtfSearchMucDo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jtfSearchKetQua.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
         jpnView.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -55,13 +55,13 @@ public class ThongKeCachLyJPanel extends javax.swing.JPanel {
             .addGap(0, 416, Short.MAX_VALUE)
         );
 
-        jLabel1.setText("Mức độ");
+        jLabel1.setText("Kết Quả Test");
 
-        jLabel2.setText("Thời gian bắt đầu");
+        jLabel2.setText("Thời gian Test");
 
         jtfSearchThoiGian.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        jLabel3.setText("Thống kê cách ly");
+        jLabel3.setText("Thống kê Test");
 
         javax.swing.GroupLayout jpnRootLayout = new javax.swing.GroupLayout(jpnRoot);
         jpnRoot.setLayout(jpnRootLayout);
@@ -79,13 +79,13 @@ public class ThongKeCachLyJPanel extends javax.swing.JPanel {
                             .addGroup(jpnRootLayout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jtfSearchThoiGian, javax.swing.GroupLayout.DEFAULT_SIZE, 176, Short.MAX_VALUE))
+                                .addComponent(jtfSearchThoiGian, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE))
                             .addGroup(jpnRootLayout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jtfSearchMucDo, javax.swing.GroupLayout.DEFAULT_SIZE, 74, Short.MAX_VALUE)
+                                .addComponent(jtfSearchKetQua, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
                                 .addGap(155, 155, 155)))
-                        .addGap(0, 247, Short.MAX_VALUE)))
+                        .addGap(0, 233, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jpnRootLayout.setVerticalGroup(
@@ -96,7 +96,7 @@ public class ThongKeCachLyJPanel extends javax.swing.JPanel {
                         .addGap(16, 16, 16)
                         .addGroup(jpnRootLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(jtfSearchMucDo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jtfSearchKetQua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jpnRootLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel3)))
@@ -138,7 +138,7 @@ public class ThongKeCachLyJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jpnRoot;
     private javax.swing.JPanel jpnView;
-    private javax.swing.JTextField jtfSearchMucDo;
+    private javax.swing.JTextField jtfSearchKetQua;
     private javax.swing.JTextField jtfSearchThoiGian;
     // End of variables declaration//GEN-END:variables
 }
