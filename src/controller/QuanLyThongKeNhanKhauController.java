@@ -27,6 +27,9 @@ import service.NhanKhauServiceImpl;
 import utility.ClassTableModel;
 import view.NhanKhauJFrame;
 import java.lang.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 /**
  *
@@ -38,15 +41,17 @@ public class QuanLyThongKeNhanKhauController {
     private JTextField jtfSearchGender;
     private JTextField jtfSearchAge1;
     private JTextField jtfSearchAge2;
+    private JButton jButton;
     private NhanKhauService nhanKhauService = null;
     private String[] listColumn = {"ID", "Họ và Tên", "Ngày sinh", "Giới tính", "Nơi sinh", "Địa chỉ"};
     private TableRowSorter<TableModel> rowSorter = null;
 
-    public QuanLyThongKeNhanKhauController(JPanel jpnView, JTextField jtfSearchGender, JTextField jtfSearchAge1, JTextField jtfSearchAge2) {
+    public QuanLyThongKeNhanKhauController(JPanel jpnView, JTextField jtfSearchGender, JTextField jtfSearchAge1, JTextField jtfSearchAge2, JButton jButton) {
         this.jpnView = jpnView;
         this.jtfSearchGender = jtfSearchGender;
         this.jtfSearchAge1 = jtfSearchAge1;
         this.jtfSearchAge2 = jtfSearchAge2;
+        this.jButton = jButton;
         this.nhanKhauService = new NhanKhauServiceImpl();
     }
 
@@ -56,130 +61,27 @@ public class QuanLyThongKeNhanKhauController {
         JTable table = new JTable(model);
         rowSorter = new TableRowSorter<>(table.getModel());
         table.setRowSorter(rowSorter);
-        jtfSearchGender.getDocument().addDocumentListener(new DocumentListener() {
-            List<RowFilter<Object, Object>> filters = new ArrayList<>(3);
+
+        jButton.addMouseListener(new MouseAdapter() {
 
             @Override
-            public void insertUpdate(DocumentEvent e) {
+            public void mouseClicked(MouseEvent e) {
+                List<RowFilter<Object, Object>> filters = new ArrayList<>(3);
                 String textGender = jtfSearchGender.getText();
-                Date startDate = new Date(Integer.parseInt(jtfSearchAge1.getText()), 1, 1);
-                Date endDate = new Date(Integer.parseInt(jtfSearchAge2.getText()), 1, 1);
-                if (textGender.trim().length() == 0) {
-                    filters.add(RowFilter.dateFilter(ComparisonType.AFTER, startDate, 2));
-                    filters.add(RowFilter.dateFilter(ComparisonType.BEFORE, endDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
-                } else {
+                if (textGender.trim().length() != 0) {
                     filters.add(RowFilter.regexFilter("(?i)" + textGender, 3));
-                    filters.add(RowFilter.dateFilter(ComparisonType.AFTER, startDate, 2));
-                    filters.add(RowFilter.dateFilter(ComparisonType.BEFORE, endDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
                 }
-            }
-
-            @Override
-            public void removeUpdate(DocumentEvent e) {
-                String textGender = jtfSearchGender.getText();
-                Date startDate = new Date(Integer.parseInt(jtfSearchAge1.getText()), 1, 1);
-                Date endDate = new Date(Integer.parseInt(jtfSearchAge2.getText()), 1, 1);
-                if (textGender.trim().length() == 0) {
+                if (jtfSearchAge1.getText().trim().length() != 0) {
+                    
+                    Date startDate = (java.sql.Date) new Date(Integer.parseInt(jtfSearchAge1.getText()) - 1900, 1, 1);
+                    System.out.println(startDate);
                     filters.add(RowFilter.dateFilter(ComparisonType.AFTER, startDate, 2));
-                    filters.add(RowFilter.dateFilter(ComparisonType.BEFORE, endDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
-                } else {
-                    filters.add(RowFilter.regexFilter("(?i)" + textGender, 3));
-                    filters.add(RowFilter.dateFilter(ComparisonType.AFTER, startDate, 2));
-                    filters.add(RowFilter.dateFilter(ComparisonType.BEFORE, endDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
                 }
-            }
-
-            @Override
-            public void changedUpdate(DocumentEvent e) {
-            }
-        });
-
-        
-        jtfSearchAge1.getDocument().addDocumentListener(new DocumentListener() {
-            List<RowFilter<Object, Object>> filters = new ArrayList<>(3);
-
-            @Override
-            public void insertUpdate(DocumentEvent e) {
-                String textGender = jtfSearchGender.getText();
-                Date startDate = new Date(Integer.parseInt(jtfSearchAge1.getText()), 1, 1);
-                Date endDate = new Date(Integer.parseInt(jtfSearchAge2.getText()), 1, 1);
-                if (jtfSearchAge1.getText().trim().length() == 0) {
-                    filters.add(RowFilter.regexFilter("(?i)" + textGender, 3));
+                if (jtfSearchAge2.getText().trim().length() != 0) {
+                    Date endDate = new Date(Integer.parseInt(jtfSearchAge2.getText()) - 1900, 1, 1);
                     filters.add(RowFilter.dateFilter(ComparisonType.BEFORE, endDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
-                } else {
-                    filters.add(RowFilter.regexFilter("(?i)" + textGender, 3));
-                    filters.add(RowFilter.dateFilter(ComparisonType.AFTER, startDate, 2));
-                    filters.add(RowFilter.dateFilter(ComparisonType.BEFORE, endDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
                 }
-            }
-
-            @Override
-            public void removeUpdate(DocumentEvent e) {
-                String textGender = jtfSearchGender.getText();
-                Date startDate = new Date(Integer.parseInt(jtfSearchAge1.getText()), 1, 1);
-                Date endDate = new Date(Integer.parseInt(jtfSearchAge2.getText()), 1, 1);
-                if (jtfSearchAge1.getText().trim().length() == 0) {
-                    filters.add(RowFilter.regexFilter("(?i)" + textGender, 3));
-                    filters.add(RowFilter.dateFilter(ComparisonType.BEFORE, endDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
-                } else {
-                    filters.add(RowFilter.regexFilter("(?i)" + textGender, 3));
-                    filters.add(RowFilter.dateFilter(ComparisonType.AFTER, startDate, 2));
-                    filters.add(RowFilter.dateFilter(ComparisonType.BEFORE, endDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
-                }
-            }
-
-            @Override
-            public void changedUpdate(DocumentEvent e) {
-            }
-        });
-        
-        jtfSearchAge2.getDocument().addDocumentListener(new DocumentListener() {
-            List<RowFilter<Object, Object>> filters = new ArrayList<>(3);
-
-            @Override
-            public void insertUpdate(DocumentEvent e) {
-                String textGender = jtfSearchGender.getText();
-                Date startDate = new Date(Integer.parseInt(jtfSearchAge1.getText()), 1, 1);
-                Date endDate = new Date(Integer.parseInt(jtfSearchAge2.getText()), 1, 1);
-                if (jtfSearchAge2.getText().trim().length() == 0) {
-                    filters.add(RowFilter.regexFilter("(?i)" + textGender, 3));
-                    filters.add(RowFilter.dateFilter(ComparisonType.AFTER, startDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
-                } else {
-                    filters.add(RowFilter.regexFilter("(?i)" + textGender, 3));
-                    filters.add(RowFilter.dateFilter(ComparisonType.AFTER, startDate, 2));
-                    filters.add(RowFilter.dateFilter(ComparisonType.BEFORE, endDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
-                }
-            }
-
-            @Override
-            public void removeUpdate(DocumentEvent e) {
-                String textGender = jtfSearchGender.getText();
-                Date startDate = new Date(Integer.parseInt(jtfSearchAge1.getText()), 1, 1);
-                Date endDate = new Date(Integer.parseInt(jtfSearchAge2.getText()), 1, 1);
-                if (jtfSearchAge2.getText().trim().length() == 0) {
-                    filters.add(RowFilter.regexFilter("(?i)" + textGender, 3));
-                    filters.add(RowFilter.dateFilter(ComparisonType.AFTER, startDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
-                } else {
-                    filters.add(RowFilter.regexFilter("(?i)" + textGender, 3));
-                    filters.add(RowFilter.dateFilter(ComparisonType.AFTER, startDate, 2));
-                    filters.add(RowFilter.dateFilter(ComparisonType.BEFORE, endDate, 2));
-                    rowSorter.setRowFilter(RowFilter.andFilter(filters));
-                }
-            }
-
-            @Override
-            public void changedUpdate(DocumentEvent e) {
+                rowSorter.setRowFilter(RowFilter.andFilter(filters));
             }
         });
         table.getColumnModel().getColumn(2).setMaxWidth(80);
