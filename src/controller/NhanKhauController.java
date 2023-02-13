@@ -73,7 +73,7 @@ public class NhanKhauController {
                     nhanKhau.setDiaChi(jtaDiaChi.getText());
                     int lastID = nhanKhauService.createOrUpdate(nhanKhau);
                     if (lastID > 0){
-                    nhanKhau.setID(lastID);
+//                    nhanKhau.setID(lastID);
                     jtfID.setText("#" + lastID);
                     jlbMsg.setText("Thêm Mới Dữ Liệu Thành Công");
                     }

@@ -65,6 +65,7 @@ public class CachLyController {
                     jlbMsg.setText("Vui lòng nhập dữ liệu bắt buộc");
                 }
                 else{
+                    cachLy.setIDNhanKhau(Integer.parseInt(jtfIDNhanKhau.getText()));
                     cachLy.setHoTen(jtfHoTen.getText());
                     cachLy.setThoiGianBatDau((java.sql.Date) new Date(jdcThoiGianBatDau.getDate().getTime()));
                     cachLy.setMucDoCachLy(jtfMucDoCachLy.getText());
@@ -72,7 +73,7 @@ public class CachLyController {
                     cachLy.setDaKiemTra(jtfDaKiemTra.getText());
                     int lastID = cachLyService.createOrUpdate(cachLy);
                     if (lastID > 0){
-                    cachLy.setIDCachLy(lastID);
+//                    cachLy.setIDCachLy(lastID);
                     jtfIDCachLy.setText("#" + lastID);
                     jlbMsg.setText("Thêm Mới Dữ Liệu Thành Công");
                     }

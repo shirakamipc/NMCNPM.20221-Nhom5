@@ -66,13 +66,14 @@ public class KiemTraController {
                     jlbMsg.setText("Vui lòng nhập dữ liệu bắt buộc");
                 }
                 else{
+                    kiemTra.setIDNhanKhau(Integer.parseInt(jtfIDNhanKhau.getText()));
                     kiemTra.setHoTen(jtfHoTen.getText());
                     kiemTra.setThoiDiemTest((java.sql.Date) new Date(jdcThoiDiemTest.getDate().getTime()));
                     kiemTra.setHinhThucTest(jtfHinhThucTest.getText());
                     kiemTra.setKetQua(jtaKetQua.getText());
                     int lastID = kiemTraService.createOrUpdate(kiemTra);
                     if (lastID > 0){
-                    kiemTra.setIDTest(lastID);
+//                    kiemTra.setIDTest(lastID);
                     jtfIDTest.setText("#" + lastID);
                     jlbMsg.setText("Thêm Mới Dữ Liệu Thành Công");
                     }
