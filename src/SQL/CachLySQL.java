@@ -14,6 +14,9 @@ import model.CachLy;
  */
 public interface CachLySQL {
             public List<CachLy> getList();
+
+    int delete(int id);
+
     public int createOrUpdate(CachLy cachLy);
     
 }

@@ -3,7 +3,7 @@ package SQL;
 import java.util.List;
 
 import model.KhaiBao;
-import model.NhanKhau;
+
 import java.sql.Connection;
 import java.util.ArrayList;
 import java.sql.PreparedStatement;
@@ -66,6 +66,21 @@ public class KhaiBaoSQLImpl implements KhaiBaoSQL {
             cons.close();
             return generatedKey;
         } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return 0;
+    }
+    @Override
+    public int delete(int id) {
+        try {
+            Connection cons = DBConnect.getConnection();
+            String sql = "DELETE FROM KhaiBao WHERE IDKhaiBao = ?";
+            PreparedStatement ps = cons.prepareStatement(sql);
+            ps.setInt(1, id);
+            ps.executeUpdate();
+            ps.close();
+            cons.close();
+        } catch (SQLException ex) {
             ex.printStackTrace();
         }
         return 0;

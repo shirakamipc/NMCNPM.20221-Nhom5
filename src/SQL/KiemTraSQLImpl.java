@@ -75,6 +75,20 @@ public class KiemTraSQLImpl implements KiemTraSQL{
         }
         return 0;
     }
+    public int delete(int IDTest) {
+        try {
+            Connection cons = DBConnect.getConnection();
+            String sql = "DELETE FROM KiemTra WHERE IDTest=?";
+            PreparedStatement ps = cons.prepareStatement(sql);
+            ps.setInt(1, IDTest);
+            int deletedRows = ps.executeUpdate();
+            ps.close();
+            cons.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
+    }
 
     public static void main(String[] args) {
         KiemTraSQL kiemTraSQL = new KiemTraSQLImpl();

@@ -12,13 +12,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
 import model.CachLy;
 
 /**
- *
  * @author admin
  */
-public class CachLySQLImpl implements CachLySQL{
+public class CachLySQLImpl implements CachLySQL {
     @Override
     public List<CachLy> getList() {
         try {
@@ -27,7 +27,7 @@ public class CachLySQLImpl implements CachLySQL{
             List<CachLy> list = new ArrayList<>();
             PreparedStatement ps = cons.prepareCall(sql);
             ResultSet rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 CachLy cachLy = new CachLy();
                 cachLy.setIDCachLy(rs.getInt("IDCachLy"));
                 cachLy.setIDNhanKhau(rs.getInt("IDNhanKhau"));
@@ -47,7 +47,24 @@ public class CachLySQLImpl implements CachLySQL{
         }
         return null;
     }
-    
+
+    @Override
+    public int delete(int id) {
+        try {
+            Connection cons = DBConnect.getConnection();
+            String sql = "DELETE FROM CachLy WHERE IDCachLy = ?";
+            PreparedStatement ps = cons.prepareStatement(sql);
+            ps.setInt(1, id);
+            int rowsDeleted = ps.executeUpdate();
+            ps.close();
+            cons.close();
+            return rowsDeleted;
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
+    }
+
     public int createOrUpdate(CachLy cachLy) {
         try {
             Connection cons = DBConnect.getConnection();
@@ -81,5 +98,5 @@ public class CachLySQLImpl implements CachLySQL{
         CachLySQL cachLySQL = new CachLySQLImpl();
         System.out.println(cachLySQL.getList());
     }
-    
+
 }

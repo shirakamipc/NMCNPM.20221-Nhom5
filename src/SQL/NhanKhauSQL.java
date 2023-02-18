@@ -15,4 +15,5 @@ import model.NhanKhau;
 public interface NhanKhauSQL {
     public List<NhanKhau> getList();
     public int createOrUpdate(NhanKhau nhanKhau);
+    int delete(int id);
 }
