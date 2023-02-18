@@ -77,6 +77,22 @@ public class HoKhauSQLImpl implements HoKhauSQL {
         }
         return 0;
     }
+    @Override
+    public int delete(int id) {
+        try {
+            Connection cons = DBConnect.getConnection();
+            String sql = "DELETE FROM hokhau WHERE ID = ?";
+            PreparedStatement ps = cons.prepareStatement(sql);
+            ps.setInt(1, id);
+            int rowsAffected = ps.executeUpdate();
+            ps.close();
+            cons.close();
+            return rowsAffected;
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
+    }
 
     public static void main(String[] args) {
         HoKhauSQL hoKhauSQL = new HoKhauSQLImpl();

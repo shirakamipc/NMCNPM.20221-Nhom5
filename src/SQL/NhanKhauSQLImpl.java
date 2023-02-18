@@ -70,6 +70,21 @@ public class NhanKhauSQLImpl implements NhanKhauSQL{
         return 0;
     }
 
+    public int delete(int id) {
+        try {
+            Connection cons = DBConnect.getConnection();
+            String sql = "DELETE FROM NhanKhau WHERE ID = ?";
+            PreparedStatement ps = cons.prepareStatement(sql);
+            ps.setInt(1, id);
+            ps.executeUpdate();
+            ps.close();
+            cons.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return 0;
+    }
+
     public static void main(String[] args) {
         NhanKhauSQL nhanKhauSQL = new NhanKhauSQLImpl();
         System.out.println(nhanKhauSQL.getList());

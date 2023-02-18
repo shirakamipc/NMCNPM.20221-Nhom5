@@ -3,7 +3,6 @@ package SQL;
 import java.util.List;
 
 import model.KhaiBao;
-import model.KiemTra;
 
 /**
  *
@@ -12,4 +11,6 @@ import model.KiemTra;
 public interface KhaiBaoSQL {
     public List<KhaiBao> getList();
     public int createOrUpdate(KhaiBao khaiBao);
+
+    int delete(int id);
 }
