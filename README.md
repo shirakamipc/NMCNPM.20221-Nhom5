@@ -46,3 +46,4 @@ git push origin feature/YourFeature
 # Lưu ý
 - Vào folder model file DBConnect
 - Thay username và password bằng username và password mà bạn dùng cho cơ sở dữ liệu trên máy bạn
+

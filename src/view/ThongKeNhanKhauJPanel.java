@@ -17,7 +17,7 @@ public class ThongKeNhanKhauJPanel extends javax.swing.JPanel {
      */
     public ThongKeNhanKhauJPanel() {
         initComponents();
-        QuanLyThongKeNhanKhauController controller = new QuanLyThongKeNhanKhauController(jpnView3, jtfSearchGender, jtfSearchAge1, jtfSearchAge2);
+        QuanLyThongKeNhanKhauController controller = new QuanLyThongKeNhanKhauController(jpnView3, jtfSearchGender, jtfSearchAge1, jtfSearchAge2, jButton1);
         controller.setDatetoTable();
     }
 
@@ -40,6 +40,7 @@ public class ThongKeNhanKhauJPanel extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jtfSearchAge2 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         jpnRoot.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -51,7 +52,7 @@ public class ThongKeNhanKhauJPanel extends javax.swing.JPanel {
         jpnView3.setLayout(jpnView3Layout);
         jpnView3Layout.setHorizontalGroup(
             jpnView3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 617, Short.MAX_VALUE)
         );
         jpnView3Layout.setVerticalGroup(
             jpnView3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -72,6 +73,13 @@ public class ThongKeNhanKhauJPanel extends javax.swing.JPanel {
 
         jtfSearchAge2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
+        jButton1.setText("Hiển thị");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jpnRootLayout = new javax.swing.GroupLayout(jpnRoot);
         jpnRoot.setLayout(jpnRootLayout);
         jpnRootLayout.setHorizontalGroup(
@@ -79,7 +87,9 @@ public class ThongKeNhanKhauJPanel extends javax.swing.JPanel {
             .addGroup(jpnRootLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jpnRootLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jpnView3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jpnRootLayout.createSequentialGroup()
+                        .addComponent(jpnView3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
                     .addGroup(jpnRootLayout.createSequentialGroup()
                         .addGap(9, 9, 9)
                         .addComponent(jLabel3)
@@ -95,12 +105,16 @@ public class ThongKeNhanKhauJPanel extends javax.swing.JPanel {
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jtfSearchGender)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jtfSearchAge2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 222, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addGroup(jpnRootLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jpnRootLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jtfSearchAge2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jpnRootLayout.createSequentialGroup()
+                                .addGap(72, 72, 72)
+                                .addComponent(jButton1)))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         jpnRootLayout.setVerticalGroup(
             jpnRootLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -110,7 +124,8 @@ public class ThongKeNhanKhauJPanel extends javax.swing.JPanel {
                         .addGap(16, 16, 16)
                         .addGroup(jpnRootLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(jtfSearchGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jtfSearchGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton1)))
                     .addGroup(jpnRootLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel3)))
@@ -148,16 +163,19 @@ public class ThongKeNhanKhauJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jpnRoot;
-    private javax.swing.JPanel jpnView;
-    private javax.swing.JPanel jpnView1;
     private javax.swing.JPanel jpnView3;
     private javax.swing.JTextField jtfSearchAge1;
     private javax.swing.JTextField jtfSearchAge2;

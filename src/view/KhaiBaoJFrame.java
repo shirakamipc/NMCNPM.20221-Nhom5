@@ -43,7 +43,6 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jtfIDNhanKhau = new javax.swing.JTextField();
         jtfVungDich = new javax.swing.JTextField();
-        btnSubmit2 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jtaBieuHien = new javax.swing.JTextArea();
         jdcNgayKhaiBao = new com.toedter.calendar.JDateChooser();
@@ -103,16 +102,6 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
             }
         });
 
-        btnSubmit2.setBackground(new java.awt.Color(130, 180, 203));
-        btnSubmit2.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
-        btnSubmit2.setForeground(new java.awt.Color(255, 255, 255));
-        btnSubmit2.setText("Hủy");
-        btnSubmit2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSubmit2ActionPerformed(evt);
-            }
-        });
-
         jtaBieuHien.setColumns(20);
         jtaBieuHien.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jtaBieuHien.setLineWrap(true);
@@ -125,8 +114,6 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnSubmit2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnSubmit)
                 .addGap(27, 27, 27))
             .addGroup(jPanel2Layout.createSequentialGroup()
@@ -174,9 +161,7 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(89, 89, 89)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSubmit2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -221,10 +206,6 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSubmit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmit2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSubmit2ActionPerformed
-
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSubmitActionPerformed
@@ -239,7 +220,6 @@ public class KhaiBaoJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSubmit;
-    private javax.swing.JButton btnSubmit2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
