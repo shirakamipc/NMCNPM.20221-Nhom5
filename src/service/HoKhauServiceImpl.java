@@ -33,4 +33,8 @@ public class HoKhauServiceImpl implements HoKhauService{
         return hoKhauSQL.createOrUpdate(hoKhau);
     
     }
+    @Override
+    public int delete(int id){
+        return hoKhauSQL.delete(id);
+    }
 }

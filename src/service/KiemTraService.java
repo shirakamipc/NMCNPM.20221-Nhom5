@@ -15,4 +15,5 @@ import model.KiemTra;
 public interface KiemTraService {
     public List<KiemTra> getList();
         public int createOrUpdate(KiemTra kiemTra);
+        public int delete(int id);
 }

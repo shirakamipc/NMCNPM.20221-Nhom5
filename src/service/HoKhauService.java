@@ -15,5 +15,6 @@ import model.HoKhau;
 public interface HoKhauService {
     public List<HoKhau> getList();
         public int createOrUpdate(HoKhau hoKhau);
+        public int delete(int id;)
     
 }
