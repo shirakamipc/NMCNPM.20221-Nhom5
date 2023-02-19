@@ -29,6 +29,11 @@ public class NhanKhauServiceImpl implements NhanKhauService{
         return nhanKhauSQL.createOrUpdate(nhanKhau);
     
     }
-    
-    
+
+    @Override
+    public int delete(int id) {
+        return nhanKhauSQL.delete(id);
+    }
+
+
 }

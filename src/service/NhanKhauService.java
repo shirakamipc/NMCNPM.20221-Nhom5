@@ -16,6 +16,6 @@ public interface NhanKhauService {
     
     public List<NhanKhau> getList();
         public int createOrUpdate(NhanKhau nhanKhau);
-
+    public int delete(int id);
     
 }
