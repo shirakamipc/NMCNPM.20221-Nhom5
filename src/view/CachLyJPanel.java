@@ -18,7 +18,7 @@ public class CachLyJPanel extends javax.swing.JPanel {
      */
     public CachLyJPanel() {
         initComponents();
-                QuanLyCachLyController controller = new QuanLyCachLyController(jpnView, btnAdd, jtfSearch);
+                QuanLyCachLyController controller = new QuanLyCachLyController(jpnView, btnAdd, jtfSearch, btnDelete);
         controller.setDatetoTable2();
         controller.setEvent();
     }
@@ -37,6 +37,7 @@ public class CachLyJPanel extends javax.swing.JPanel {
         btnAdd = new javax.swing.JButton();
         jtfSearch = new javax.swing.JTextField();
         jpnView = new javax.swing.JPanel();
+        btnDelete = new javax.swing.JButton();
 
         jLabel1.setText("jLabel1");
 
@@ -60,6 +61,9 @@ public class CachLyJPanel extends javax.swing.JPanel {
             .addGap(0, 409, Short.MAX_VALUE)
         );
 
+        btnDelete.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnDelete.setText("Xóa");
+
         javax.swing.GroupLayout jpnRootLayout = new javax.swing.GroupLayout(jpnRoot);
         jpnRoot.setLayout(jpnRootLayout);
         jpnRootLayout.setHorizontalGroup(
@@ -69,7 +73,9 @@ public class CachLyJPanel extends javax.swing.JPanel {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnRootLayout.createSequentialGroup()
                         .addGap(24, 24, 24)
                         .addComponent(jtfSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 314, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 224, Short.MAX_VALUE)
+                        .addComponent(btnDelete)
+                        .addGap(18, 18, 18)
                         .addComponent(btnAdd))
                     .addGroup(jpnRootLayout.createSequentialGroup()
                         .addContainerGap()
@@ -82,7 +88,8 @@ public class CachLyJPanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jpnRootLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAdd)
-                    .addComponent(jtfSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtfSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDelete))
                 .addGap(27, 27, 27)
                 .addComponent(jpnView, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -103,6 +110,7 @@ public class CachLyJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;
+    private javax.swing.JButton btnDelete;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jpnRoot;
     private javax.swing.JPanel jpnView;
